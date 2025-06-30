@@ -6,18 +6,21 @@ body {
     height: 955px;
 }
 
+#div1{
+    flex:5;
+}
 header {
     background-color: #a0271f;
     color: white;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    flow-direction:column;
+    align-items: center;
 }
 
 
 main {
-   color: white;
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -26,64 +29,77 @@ main {
 }
 
 .p {
-	font-size: 40px;
+    font-size: 40px;
 }
 
-.title{
-	font-size: 50px;
+.title {
+    font-size: 50px;
 }
 
 a:hover {
-  
-box-shadow: 0 0 100px gold;
-  
+
+    box-shadow: 0 0 100px gold;
+
 }
 
 
-.icon{
-    width:  50px;
+.icon {
+    width: 50px;
 }
 
 #burger {
-  max-width: 500px;
-  
-  
+    max-height: 300px;
+    flex:5;
 }
 
 
 #carte {
- width: 400px ;
- height: 400px;
+    width: 400px;
+    height: 400px;
 
 }
 
 
-#instagram{
+#instagram {
 
-    width:  50px;
+    width: 50px;
 
 }
 
-#snapchat{
-    width:  50px;
+#snapchat {
+    width: 50px;
 }
 
-#tiktok{
-    width:  50px;
+#tiktok {
+    width: 50px;
 }
 
-footer { 
-background-color: #f4e4b8;
-column-count: 3; /* permet de diviser le footer en 3 colonnes */
-justify-content:center;
+footer {
+    background-color: #f4e4b8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* permet d'afficher le footer en 3 colonnes de même taille */
 }
 
 
-h2{
-    flex: 4; /* permet de prendre 4 fois plus de place que les autres éléments
+h2 {
+    flex: 4;
+    /* permet de prendre 4 fois plus de place que les autres éléments
      ou de prendre 4/10 de la place si il y a 2 autre flex:3*/
+    margin: 0 auto;
 }
 
-.pfoot{
-    flex:3;
+.pfoot {
+    flex: 3;
+    margin: 0 auto;
+    width: 157px;
+    height: 100px;
+}
+
+#pfoot1 {
+    padding-left: 400px;
+}
+
+#pfoot2 {
+    padding-right: 300px;
 }
