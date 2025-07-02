@@ -6,9 +6,16 @@ body {
     height: 955px;
 }
 
-#div1{
-    flex:5;
+img {
+    width: 100%;
 }
+
+/*
+#div1 {
+    flex: 5;
+}
+*/
+
 header {
     background-color: #a0271f;
     color: white;
@@ -16,6 +23,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 
@@ -28,55 +37,38 @@ main {
     background-color: #d96625;
 }
 
-.p {
+p {
     font-size: 40px;
 }
 
 .title {
-    font-size: 50px;
+    font-size: 70px;
 }
-
-a:hover {
-
-    box-shadow: 0 0 100px gold;
-
-}
-
 
 .icon {
     width: 50px;
 }
 
+.icon:hover {
+
+    box-shadow: 0px 0px 100px black;
+}
+
 #burger {
     max-height: 300px;
-    flex:5;
-}
+    padding: 300px;
+    /*flex: 5;*/
 
+}
 
 #carte {
-    width: 400px;
-    height: 400px;
-
-}
-
-
-#instagram {
-
-    width: 50px;
-
-}
-
-#snapchat {
-    width: 50px;
-}
-
-#tiktok {
-    width: 50px;
+    width: 80%;
 }
 
 footer {
     background-color: #f4e4b8;
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
     /* permet d'afficher le footer en 3 colonnes de même taille */
 }
@@ -92,14 +84,27 @@ h2 {
 .pfoot {
     flex: 3;
     margin: 0 auto;
-    width: 157px;
-    height: 100px;
 }
 
-#pfoot1 {
-    padding-left: 400px;
-}
+/*media queries*/
 
-#pfoot2 {
-    padding-right: 300px;
+@media screen and (max-width: 600px) {
+
+    #burger {
+        padding: 0px;
+    }
+
+
+    footer .title {
+        order: 1;
+    }
+
+    .pfoot {
+        order: 2;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
 }
